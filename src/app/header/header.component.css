@@ -1,0 +1,58 @@
+nav {
+  display: block;
+  width: 100%;
+}
+
+nav ul {
+  background-color: #eee;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.topnav li {
+  list-style: none;
+  float: left;
+}
+
+ul.topnav li.topnav-right {
+  list-style: none;
+  float: right;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  min-height: 16px;
+  text-align: center;
+  padding: 14px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+ul.topnav li a:hover {
+  background-color: #0080ff;
+  color: #fff;
+}
+
+ul.topnav li.nav-dropdown_icon {
+  display: none;
+}
+
+
+/*###################MEDIA QUERY##############################*/
+@media screen and (max-width: 680px) {
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+
+  ul.topnav li.nav-dropdown_icon {
+    display: block;
+    float: right;
+  }
+
+  ul.topnav.responsive li a {
+  	display: block;
+  	text-align: left;
+  }
+}
